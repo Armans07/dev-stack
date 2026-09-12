@@ -90,45 +90,49 @@ function App() {
     toast.info("All technologies removed from your stack.");
   };
 
-  return (
-    <>
-      <Navbar />
+ return (
+  <>
+    <Navbar />
 
-      <Hero />
+    <Hero />
 
-      {/* Technology Section */}
-      {loading ? (
-        <div className="flex min-h-[400px] items-center justify-center">
-          <div className="text-center">
-            <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-gray-200 border-t-pink-500"></div>
+    {loading ? (
+      <section className="flex min-h-[450px] items-center justify-center bg-white">
+        <div className="text-center">
+          
+          <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-gray-200 border-t-pink-500"></div>
 
-            <p className="mt-4 text-gray-600">
-              Loading technologies...
-            </p>
-          </div>
+          <p className="mt-4 text-sm font-medium text-gray-600">
+            Loading technologies...
+          </p>
+
+          <p className="mt-1 text-xs text-gray-400">
+            Please wait a moment
+          </p>
+
         </div>
-      ) : (
-        <TechnologyGrid
-          technologies={technologies}
-          stack={stack}
-          onAdd={handleAddToStack}
-          onRemove={handleRemoveFromStack}
-          onRemoveAll={handleRemoveAll}
-        />
-      )}
-
-      <Footer />
-
-      {/* Toast Notification */}
-      <ToastContainer
-        position="top-right"
-        autoClose={2000}
-        newestOnTop
-        closeOnClick
-        pauseOnHover
+      </section>
+    ) : (
+      <TechnologyGrid
+        technologies={technologies}
+        stack={stack}
+        onAdd={handleAddToStack}
+        onRemove={handleRemoveFromStack}
+        onRemoveAll={handleRemoveAll}
       />
-    </>
-  );
+    )}
+
+    <Footer />
+
+    <ToastContainer
+      position="top-right"
+      autoClose={2000}
+      newestOnTop
+      closeOnClick
+      pauseOnHover
+    />
+  </>
+);
 }
 
 export default App;
