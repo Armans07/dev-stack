@@ -77,7 +77,7 @@ function Navbar() {
 
       {/* Right: Action Buttons */}
       <div className="flex items-center gap-2 md:gap-4">
-        <button className="btn btn-ghost text-gray-700 font-medium normal-case hover:bg-transparent px-3 md:px-4 text-xs md:text-sm">
+        <button className="btn text-black border-none rounded-full px-4 md:px-6 text-xs md:text-sm normal-case">
           Sign In
         </button>
         <button className="btn bg-pink-500 hover:bg-pink-600 text-white border-none rounded-full px-4 md:px-6 text-xs md:text-sm normal-case">

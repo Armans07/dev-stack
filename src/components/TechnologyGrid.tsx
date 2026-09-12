@@ -1,5 +1,6 @@
-import type { Technology } from "../types/technology";
+
 import TechnologyCard from "./TechnologyCard";
+import type { Technology } from "./types/technology";
 import YourStack from "./YourStack";
 
 type TechnologyGridProps = {

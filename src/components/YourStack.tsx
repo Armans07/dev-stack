@@ -1,4 +1,5 @@
-import type { Technology } from "../types/technology";
+import type { Technology } from "./types/technology";
+
 
 type YourStackProps = {
   stack: Technology[];
@@ -20,30 +21,17 @@ const YourStack = ({ stack, onRemove, onRemoveAll }: YourStackProps) => {
           </p>
         </div>
 
-        {stack.length > 0 && (
-          <button
-            onClick={onRemoveAll}
-            className="rounded border border-red-200 px-2 py-1 text-[7px] font-semibold text-red-500 transition hover:bg-red-50"
-          >
-            Remove All
-          </button>
-        )}
+     
       </div>
 
       {/* Empty State */}
       {stack.length === 0 ? (
         <div className="flex min-h-[220px] flex-col items-center justify-center px-4 text-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-50 text-2xl">
-            🧰
-          </div>
 
-          <h3 className="mt-3 text-xs font-bold text-gray-800">
+          <h3 className="mt-3 text-xs font-bold text-gray-800 border-2 p-8 border- ">
             Your stack is empty
           </h3>
 
-          <p className="mt-1 max-w-[180px] text-[9px] leading-4 text-gray-400">
-            Add technologies from the list to build your development stack.
-          </p>
         </div>
       ) : (
         <div className="mt-3 space-y-2">
@@ -84,6 +72,14 @@ const YourStack = ({ stack, onRemove, onRemoveAll }: YourStackProps) => {
           ))}
         </div>
       )}
+         {stack.length > 0 && (
+          <button
+            onClick={onRemoveAll}
+            className="rounded border  border-red-200 px-2 py-1 text-[7px] font-semibold text-red-500 transition hover:bg-red-50 "
+          >
+            Remove All
+          </button>
+        )}
     </aside>
   );
 };

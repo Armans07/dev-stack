@@ -1,24 +1,4 @@
-// import { useState } from 'react'
 
-
-// import './App.css'
-// import Navbar from './components/navbar'
-// import Hero from './components/hero'
-// import Footer from './components/footer'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <Navbar />
-//       <Hero />
-//       <Footer/>
-//     </>
-//   )
-// }
-
-// export default App
 
 
 import { useEffect, useState } from "react";
@@ -33,8 +13,9 @@ import TechnologyGrid from "./components/TechnologyGrid";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import type { Technology } from "./components/types/technology";
 
-import type { Technology } from "./types/technology";
+
 
 function App() {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
