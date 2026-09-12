@@ -4,7 +4,7 @@
     "name": "React",
     "category": "Frontend",
     "description": "A JavaScript library for building fast and interactive user interfaces.",
-    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "icon": "/src/assets/react.png",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -14,7 +14,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript.",
-    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "icon": "/src/assets/typescript.png",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Essential"
@@ -65,7 +65,7 @@
     "category": "Database",
     "description": "A powerful open-source relational database with reliability and advanced features.",
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
-    "rating": 4.9,
+    "rating": 4.9, 
     "difficulty": "Intermediate",
     "badge": "Top SQL"
   },

@@ -1,6 +1,5 @@
 import type { Technology } from "./types/technology";
 
-
 type TechnologyCardProps = {
   technology: Technology;
   isAdded: boolean;
@@ -28,11 +27,7 @@ const TechnologyCard = ({
         }`}
       >
         {/* Selected Check */}
-        {isAdded && (
-          <div className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 text-[11px] font-bold text-white shadow">
-            ✓
-          </div>
-        )}
+    
 
         {/* Top */}
         <div className="flex items-start justify-between">
@@ -86,9 +81,9 @@ const TechnologyCard = ({
         <button
           onClick={() => onAdd(technology)}
           disabled={isAdded}
-          className={`mt-2.5 w-full rounded-md py-1.5 text-[9px] font-semibold transition ${
+          className={`mt-2.5 w-full rounded-md py-1.5 text-[10px] font-semibold transition ${
             isAdded
-              ? "cursor-not-allowed border border-gray-300 bg-gray-100 text-gray-400"
+              ? "cursor-not-allowed border border-gray-300 bg-gray-100 text-pink-500"
               : "bg-[#111827] text-white hover:bg-gray-800 active:scale-[0.98]"
           }`}
         >

@@ -16,8 +16,8 @@ const YourStack = ({ stack, onRemove, onRemoveAll }: YourStackProps) => {
           <h2 className="text-sm font-bold text-gray-900">Your Stack</h2>
 
           <p className="mt-0.5 text-[8px] text-gray-400">
-            {stack.length} {stack.length === 1 ? "Technology" : "Technologies"}{" "}
-            Selected
+            {stack.length} {stack.length === 1 ? "Technology selected" : " Technologies selected."}
+           
           </p>
         </div>
 
@@ -26,9 +26,9 @@ const YourStack = ({ stack, onRemove, onRemoveAll }: YourStackProps) => {
 
       {/* Empty State */}
       {stack.length === 0 ? (
-        <div className="flex min-h-[220px] flex-col items-center justify-center px-4 text-center">
+        <div className="flex min-h-[113px] flex-col items-center justify-center px-4 text-center">
 
-          <h3 className="mt-3 text-xs font-bold text-gray-800 border-2 p-8 border- ">
+          <h3 className="mt-3 text-xs  text-gray-400 border-2 rounded-2xl p-5 border-dotted">
             Your stack is empty
           </h3>
 
@@ -75,7 +75,7 @@ const YourStack = ({ stack, onRemove, onRemoveAll }: YourStackProps) => {
          {stack.length > 0 && (
           <button
             onClick={onRemoveAll}
-            className="rounded border  border-red-200 px-2 py-1 text-[7px] font-semibold text-red-500 transition hover:bg-red-50 "
+            className="rounded border mt-5 border-red-200 px-3 py-1 text-[15px] font-semibold text-red-500 transition hover:bg-red-50 w-full"
           >
             Remove All
           </button>
