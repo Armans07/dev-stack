@@ -4,7 +4,7 @@
     "name": "React",
     "category": "Frontend",
     "description": "A JavaScript library for building fast and interactive user interfaces.",
-    "icon": "/src/assets/react.png",
+    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -14,7 +14,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript.",
-    "icon": "/src/assets/typescript.png",
+    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Essential"
