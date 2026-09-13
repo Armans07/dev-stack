@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import logo from "../assets/logo-text.png"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -53,7 +53,7 @@ function Navbar() {
         </div>
 
         {/* Logo */}
-        <img src="/src/assets/logo-text.png" alt="Logo" className="h-8 md:h-9 w-auto" />
+          <img src={logo} alt="Logo" className="h-8 md:h-9 w-auto" />
       </div>
 
       {/* Center: Desktop Navigation Links (Hidden on mobile) */}

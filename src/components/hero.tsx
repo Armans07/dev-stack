@@ -1,3 +1,4 @@
+import bannerImg from "../assets/banner-stack.png"
 export default function Hero() {
   return (
     <div className="bg-white min-h-[85vh] flex items-center justify-between px-8 md:px-16 lg:px-24 py-12">
@@ -31,7 +32,7 @@ export default function Hero() {
         {/* Right Image Area (Enlarged) */}
         <div className="flex justify-center md:justify-end md:w-7/12 w-full">
           <img
-            src="/src/assets/banner-stack.png"
+            src={bannerImg}
             alt="Development Stack Illustration"
             className="w-full max-w-lg md:max-w-xl lg:max-w-2xl object-contain drop-shadow-xl"
           />
