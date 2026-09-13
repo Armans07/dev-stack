@@ -1,3 +1,4 @@
+import logo from "../assets/logo-text.png"
 export default function Footer() {
   return (
     <footer className="bg-white text-gray-600 pt-16 pb-8 border-t border-gray-100 text-start">
@@ -8,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-2">
               <img
-                src="/src/assets/logo-text.png"
+                src={logo}
                 alt="DevStack Logo"
                 className="h-8 w-auto"
               />
